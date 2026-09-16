@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CDC Nepal | Community Development Center Nepal</title>
+  <meta name="description" content="Community Development Center (CDC) Nepal is a verified non-profit in Kathmandu since 2011, providing food, clothing, education and medical care to helpless children and vulnerable elderly citizens across Nepal. Donate securely via GlobalGiving.">
+  <link rel="canonical" href="https://www.cdcnepal.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CDC Nepal | We Help the Helpless">
+  <meta property="og:description" content="Verified Kathmandu-based non-profit (GlobalGiving #13550) supporting helpless children and vulnerable elderly with food, education, and healthcare since 2011.">
+  <meta property="og:url" content="https://www.cdcnepal.org/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Community Development Center Nepal",
+    "alternateName": "CDC Nepal",
+    "url": "https://www.cdcnepal.org/",
+    "description": "Community Development Center (CDC) Nepal is a non-profit organization founded in 2011, dedicated to helping helpless children access food, clothing, and education, and providing dignity, nourishment, and medical care to vulnerable elderly citizens in Kathmandu and across Nepal.",
+    "foundingDate": "2011",
+    "telephone": "+977-4015667",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressRegion": "Bagmati Province", "addressCountry": "NP" },
+    "sameAs": ["https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is CDC Nepal a verified non-profit organization?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. CDC Nepal has been a vetted non-profit partner on GlobalGiving, a leading global crowdfunding platform for nonprofits, since 2012 (Org #13550), and currently holds GlobalGiving's Top Ranked status for consistent engagement and program effectiveness. All donations are processed securely through GlobalGiving." } },
+      { "@type": "Question", "name": "How is my donation used?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Donations fund three ongoing programs: food, clothing, and medical care for elderly residents in Kathmandu care homes; tuition, uniforms, and textbooks for helpless and orphaned children; and emergency relief for families affected by flooding in Nepal." } },
+      { "@type": "Question", "name": "How do I know my donation is secure?",
+        "acceptedAnswer": { "@type": "Answer", "text": "All public funding is processed exclusively through GlobalGiving, an independent, vetted platform, rather than directly by CDC Nepal. This keeps every transaction transparent and auditable." } },
+      { "@type": "Question", "name": "Can I sponsor a specific child or elderly resident?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Contributions go toward program-wide funds rather than individual sponsorships, so support reaches whichever children or elderly residents currently need it most. Reach out via the contact details on this site if you'd like to discuss a dedicated gift." } },
+      { "@type": "Question", "name": "Where is CDC Nepal based?",
+        "acceptedAnswer": { "@type": "Answer", "text": "CDC Nepal is based in Kathmandu Metropolitan City, Bagmati Province, Nepal, and has been operating since 2011." } }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Montserrat & Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Root Reset for Elementor Canvas */
+    html, body {
+      background-color: #00123a !important;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      font-family: 'Montserrat', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    :root {
+      --cdc-blue-primary: #0038b8;
+      --cdc-blue-dark: #001f68;
+      --cdc-blue-deep: #00123a;
+      --cdc-orange: #ff9800;
+      --cdc-orange-hover: #e68900;
+      --cdc-emerald: #059669;
+      --cdc-slate-light: #f8fafc;
+      --cdc-gray-text: #475569;
+      --cdc-border: rgba(226, 232, 240, 0.8);
+    }
+
+    .cdc-site * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Site now spans the FULL page width; individual sections handle their
+       own full-bleed backgrounds, while .cdc-container centers content
+       at a max of 1200px inside them. */
+    .cdc-site {
+      width: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* Generic centered content wrapper used inside full-width bands */
+    .cdc-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Visible keyboard focus everywhere in the site */
+    .cdc-site a:focus-visible,
+    .cdc-site button:focus-visible,
+    .cdc-site summary:focus-visible {
+      outline: 2px solid var(--cdc-orange);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* --- Top Contact Bar --- */
+    .cdc-topbar {
+      background-color: var(--cdc-blue-dark);
+      color: #cbd5e1;
+      font-size: 0.78rem;
+      padding: 10px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cdc-topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cdc-topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .cdc-topbar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cdc-topbar-item svg {
+      color: var(--cdc-orange);
+      flex-shrink: 0;
+    }
+
+    .cdc-topbar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cdc-topbar a:hover {
+      color: var(--cdc-orange);
+    }
+
+    .cdc-badge-verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(5, 150, 105, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+
+    /* --- Header Navigation --- */
+    .cdc-navbar {
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 12px 28px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--cdc-border);
+    }
+
+    .cdc-navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cdc-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .cdc-brand-logo-img {
+      height: 42px;
+      max-height: 42px;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .cdc-brand:hover .cdc-brand-logo-img {
+      transform: scale(1.04);
+    }
+
+    .cdc-brand-logo-fallback {
+      height: 42px;
+      width: 42px;
+      background-color: var(--cdc-blue-primary);
+      color: #ffffff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 56, 184, 0.3);
+      flex-shrink: 0;
+    }
+
+    .cdc-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cdc-brand-text .en {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--cdc-blue-primary);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .cdc-brand-text .np {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    /* Nav copy in sentence case now — small caps everywhere reads templated */
+    .cdc-nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate) {
+      text-decoration: none;
+      color: #334155;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+      position: relative;
+      padding-bottom: 3px;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate)::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background: var(--cdc-orange);
+      transition: width 0.2s ease;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate):hover::after,
+    .cdc-nav-menu a.active:not(.cdc-btn-donate)::after {
+      width: 100%;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate):hover,
+    .cdc-nav-menu a.active:not(.cdc-btn-donate) {
+      color: var(--cdc-blue-primary);
+    }
+
+    .cdc-btn-donate {
+      background-color: var(--cdc-orange);
+      color: #ffffff !important;
+      padding: 11px 24px !important;
+      border-radius: 30px;
+      font-weight: 800 !important;
+      font-size: 0.85rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 4px 14px rgba(255, 152, 0, 0.35);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: static !important;
+    }
+
+    .cdc-btn-donate svg {
+      flex-shrink: 0;
+    }
+
+    .cdc-btn-donate:hover {
+      background-color: var(--cdc-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 152, 0, 0.45);
+    }
+
+    .cdc-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f172a;
+      padding: 6px;
+    }
+
+    /* --- Hero Section --- */
+    .cdc-hero {
+      background: linear-gradient(135deg, rgba(0, 56, 184, 0.94) 0%, rgba(0, 26, 94, 0.97) 100%), 
+                  url('https://cdcnepal.org/wp-content/uploads/2026/09/Provide-food-for-100-elderly-people-in-Nepal.jpg') center/cover no-repeat;
+      color: #ffffff;
+      padding: 90px 32px 110px 32px;
+      text-align: center;
+      position: relative;
+    }
+
+    .cdc-hero-content {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cdc-hero-badges {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+
+    .cdc-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 6px 18px;
+      border-radius: 30px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fde68a;
+    }
+
+    .cdc-hero-badge-alt {
+      background: rgba(255, 152, 0, 0.18);
+      border: 1px solid rgba(255, 152, 0, 0.45);
+      color: #fdba74;
+    }
+
+    .cdc-hero-badge-verified {
+      background: rgba(5, 150, 105, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+    }
+
+    .cdc-hero h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .cdc-hero h2 {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+    }
+
+    .cdc-hero p {
+      font-size: 1.05rem;
+      color: #e2e8f0;
+      max-width: 680px;
+      margin: 0 auto 38px auto;
+      line-height: 1.7;
+    }
+
+    .cdc-hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .cdc-btn-hero-primary {
+      background-color: var(--cdc-orange);
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 800;
+      padding: 15px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 22px rgba(255, 152, 0, 0.4);
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cdc-btn-hero-primary:hover {
+      background-color: var(--cdc-orange-hover);
+      transform: translateY(-2px);
+    }
+
+    .cdc-btn-hero-secondary {
+      background-color: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: #ffffff;
+      font-size: 0.92rem;
+      font-weight: 700;
+      padding: 15px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      backdrop-filter: blur(4px);
+      transition: all 0.25s ease;
+    }
+
+    .cdc-btn-hero-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+
+    /* --- Impact Stats Banner --- */
+    .cdc-stats-wrapper {
+      max-width: 1200px;
+      margin: -48px auto 0 auto;
+      padding: 0 28px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .cdc-stats-card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--cdc-border);
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .cdc-stat-item {
+      border-right: 1px solid #f1f5f9;
+      padding: 0 10px;
+    }
+
+    .cdc-stat-item:last-child {
+      border-right: none;
+    }
+
+    .cdc-stat-number {
+      font-size: 2.3rem;
+      font-weight: 900;
+      color: var(--cdc-blue-primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .cdc-stat-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    /* --- About & History Section --- */
+    .cdc-section {
+      padding: 72px 32px;
+    }
+
+    .cdc-about-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 40px;
+      align-items: center;
+      background: var(--cdc-slate-light);
+      padding: 44px;
+      border-radius: 20px;
+      border: 1px solid var(--cdc-border);
+    }
+
+    .cdc-about-content h3 {
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--cdc-blue-primary);
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+
+    .cdc-about-content .since {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--cdc-orange);
+      margin-bottom: 14px;
+    }
+
+    .cdc-about-content p {
+      color: var(--cdc-gray-text);
+      font-size: 0.97rem;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    .cdc-verification-box {
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 14px;
+      border-left: 5px solid var(--cdc-blue-primary);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    .cdc-verification-box h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cdc-verification-box p {
+      font-size: 0.92rem;
+      color: var(--cdc-gray-text);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .cdc-link-arrow {
+      color: var(--cdc-blue-primary);
+      font-weight: 800;
+      font-size: 0.87rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cdc-link-arrow:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Active Causes Grid --- */
+    .cdc-causes-section {
+      background-color: #ffffff;
+    }
+
+    .cdc-section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 50px auto;
+    }
+
+    .cdc-section-header h2 {
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--cdc-blue-primary);
+      margin-bottom: 10px;
+    }
+
+    .cdc-section-header p {
+      color: var(--cdc-gray-text);
+      font-size: 0.97rem;
+    }
+
+    .cdc-projects-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .cdc-project-card {
+      background-color: #ffffff;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--cdc-border);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cdc-project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+    }
+
+    .cdc-card-img-wrap {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .cdc-card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .cdc-project-card:hover .cdc-card-img-wrap img {
+      transform: scale(1.06);
+    }
+
+    .cdc-card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(4px);
+      padding: 5px 11px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--cdc-blue-primary);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .cdc-card-body {
+      padding: 22px;
+      flex-grow: 1;
+    }
+
+    .cdc-card-body h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+
+    .cdc-card-body p {
+      color: var(--cdc-gray-text);
+      font-size: 0.89rem;
+      line-height: 1.6;
+    }
+
+    .cdc-card-footer {
+      padding: 0 22px 22px 22px;
+    }
+
+    .cdc-btn-card-donate {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      border: 2px solid var(--cdc-blue-primary);
+      color: var(--cdc-blue-primary);
+      font-weight: 700;
+      font-size: 0.87rem;
+      padding: 11px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+
+    .cdc-btn-card-donate:hover {
+      background-color: var(--cdc-blue-primary);
+      color: #ffffff;
+    }
+
+    /* --- FAQ Section --- */
+    .cdc-faq-section {
+      background-color: var(--cdc-slate-light);
+    }
+
+    .cdc-faq-list {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cdc-faq-item {
+      background: #ffffff;
+      border: 1px solid var(--cdc-border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .cdc-faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: #0f172a;
+    }
+
+    .cdc-faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .cdc-faq-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #eff6ff;
+      color: var(--cdc-blue-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .cdc-faq-item[open] .cdc-faq-icon {
+      transform: rotate(45deg);
+      background: var(--cdc-blue-primary);
+      color: #ffffff;
+    }
+
+    .cdc-faq-answer {
+      padding: 0 24px 20px 24px;
+      color: var(--cdc-gray-text);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    /* --- Contact Us Section --- */
+    .cdc-contact-section {
+      background-color: #ffffff;
+    }
+
+    .cdc-contact-card {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+      border: 1px solid var(--cdc-border);
+    }
+
+    .cdc-contact-info-panel {
+      background: linear-gradient(135deg, rgba(0, 56, 184, 0.96) 0%, rgba(0, 18, 58, 0.98) 100%),
+                  url('https://cdcnepal.org/wp-content/uploads/2026/09/Provide-food-for-100-elderly-people-in-Nepal.jpg') center/cover no-repeat;
+      color: #ffffff;
+      padding: 56px 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cdc-contact-info-panel .since {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fdba74;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cdc-contact-info-panel h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .cdc-contact-info-panel p {
+      font-size: 0.96rem;
+      color: #cbd5e1;
+      line-height: 1.75;
+      margin-bottom: 30px;
+    }
+
+    .cdc-contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .cdc-contact-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.92rem;
+      color: #e2e8f0;
+      line-height: 1.5;
+    }
+
+    .cdc-contact-list li svg {
+      color: var(--cdc-orange);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cdc-contact-list li a {
+      color: #e2e8f0;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cdc-contact-list li a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .cdc-contact-form-panel {
+      background: #ffffff;
+      padding: 56px 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .cdc-contact-form-panel h4 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+
+    .cdc-contact-form-panel .cdc-contact-form-sub {
+      color: var(--cdc-gray-text);
+      font-size: 0.9rem;
+      margin-bottom: 26px;
+    }
+
+    /* Wrapper for the Fluent Forms shortcode output.
+       Drop [fluentform id="X"] inside this div. */
+    .cdc-contact-form-embed {
+      width: 100%;
+    }
+
+    /* Light theming hooks for Fluent Forms so the embedded form
+       matches the site branding. Class names below follow Fluent Forms'
+       default markup (ff-el-form-control, ff-btn-submit); if your build
+       uses different classes, adjust these selectors accordingly. */
+    .cdc-contact-form-embed .fluentform label,
+    .cdc-contact-form-embed label {
+      font-weight: 700 !important;
+      color: #334155 !important;
+      font-size: 0.85rem !important;
+      font-family: 'Montserrat', sans-serif !important;
+    }
+
+    .cdc-contact-form-embed .fluentform input[type="text"],
+    .cdc-contact-form-embed .fluentform input[type="email"],
+    .cdc-contact-form-embed .fluentform input[type="tel"],
+    .cdc-contact-form-embed .fluentform input[type="number"],
+    .cdc-contact-form-embed .fluentform textarea,
+    .cdc-contact-form-embed .fluentform select {
+      border: 1px solid var(--cdc-border) !important;
+      border-radius: 8px !important;
+      padding: 11px 14px !important;
+      font-family: 'Montserrat', sans-serif !important;
+      font-size: 0.92rem !important;
+      background-color: #ffffff !important;
+    }
+
+    .cdc-contact-form-embed .fluentform input:focus,
+    .cdc-contact-form-embed .fluentform textarea:focus,
+    .cdc-contact-form-embed .fluentform select:focus {
+      border-color: var(--cdc-blue-primary) !important;
+      box-shadow: 0 0 0 3px rgba(0, 56, 184, 0.12) !important;
+      outline: none !important;
+    }
+
+    .cdc-contact-form-embed .fluentform .ff-btn-submit,
+    .cdc-contact-form-embed .fluentform button[type="submit"] {
+      background-color: var(--cdc-orange) !important;
+      border: none !important;
+      border-radius: 30px !important;
+      padding: 13px 32px !important;
+      font-weight: 800 !important;
+      font-size: 0.92rem !important;
+      font-family: 'Montserrat', sans-serif !important;
+      transition: all 0.25s ease !important;
+    }
+
+    .cdc-contact-form-embed .fluentform .ff-btn-submit:hover,
+    .cdc-contact-form-embed .fluentform button[type="submit"]:hover {
+      background-color: var(--cdc-orange-hover) !important;
+      transform: translateY(-2px);
+    }
+
+    .cdc-contact-form-placeholder {
+      border: 2px dashed var(--cdc-border);
+      border-radius: 12px;
+      padding: 30px 22px;
+      text-align: center;
+      color: var(--cdc-gray-text);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      background: var(--cdc-slate-light);
+    }
+
+    .cdc-contact-form-placeholder code {
+      display: inline-block;
+      margin-top: 8px;
+      background: #eef2ff;
+      color: var(--cdc-blue-primary);
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    /* --- Main Footer --- */
+    .cdc-footer {
+      background-color: var(--cdc-blue-deep);
+      color: #94a3b8;
+      padding: 55px 32px 24px 32px;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cdc-footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cdc-footer-col h4 {
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+      border-bottom: 2px solid var(--cdc-blue-primary);
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    .cdc-footer-col p {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .cdc-footer-col ul {
+      list-style: none;
+    }
+
+    .cdc-footer-col ul li {
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .cdc-footer-col ul li svg {
+      color: var(--cdc-orange);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cdc-footer-col a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cdc-footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .cdc-footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 24px;
+      font-size: 0.78rem;
+      color: #64748b;
+    }
+
+    .cdc-footer-col .cdc-btn-footer-donate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-weight: 800;
+      font-size: 0.85rem;
+      line-height: 1;
+      padding: 11px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .cdc-footer-col .cdc-btn-footer-donate:hover {
+      background-color: var(--cdc-orange);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 152, 0, 0.35);
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 992px) {
+      .cdc-stats-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+      .cdc-stat-item {
+        border-right: none;
+      }
+      .cdc-projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cdc-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .cdc-contact-card {
+        grid-template-columns: 1fr;
+      }
+      .cdc-contact-info-panel,
+      .cdc-contact-form-panel {
+        padding: 40px 32px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cdc-topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+      .cdc-menu-toggle {
+        display: block;
+      }
+      .cdc-nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        border-bottom: 1px solid var(--cdc-border);
+      }
+      .cdc-nav-menu.active {
+        display: flex;
+      }
+      .cdc-hero {
+        padding: 70px 24px 90px 24px;
+      }
+      .cdc-hero h1 {
+        font-size: 2.1rem;
+      }
+      .cdc-hero h2 {
+        font-size: 1.3rem;
+      }
+      .cdc-about-grid {
+        grid-template-columns: 1fr;
+        padding: 28px;
+      }
+      .cdc-projects-grid {
+        grid-template-columns: 1fr;
+      }
+      .cdc-footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .cdc-faq-item summary {
+        padding: 16px 18px;
+      }
+      .cdc-faq-answer {
+        padding: 0 18px 18px 18px;
+      }
+      .cdc-nav-menu .cdc-btn-donate {
+        width: 100%;
+        justify-content: center;
+      }
+      .cdc-contact-info-panel,
+      .cdc-contact-form-panel {
+        padding: 32px 22px;
+      }
+      .cdc-contact-info-panel h3 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .cdc-stats-card {
+        grid-template-columns: 1fr 1fr;
+        padding: 22px 18px;
+        gap: 18px 14px;
+      }
+      .cdc-stat-number {
+        font-size: 1.9rem;
+      }
+      .cdc-hero {
+        padding: 56px 18px 80px 18px;
+      }
+      .cdc-hero h1 {
+        font-size: 1.7rem;
+      }
+      .cdc-hero-badge {
+        font-size: 0.72rem;
+        padding: 6px 14px;
+        text-align: center;
+      }
+      .cdc-btn-hero-primary,
+      .cdc-btn-hero-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+      .cdc-topbar-item span {
+        font-size: 0.72rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cdc-site">
+
+  <!-- Top Contact & Status Bar -->
+  <div class="cdc-topbar">
+    <div class="cdc-topbar-inner cdc-container">
+      <div class="cdc-topbar-left">
+        <div class="cdc-topbar-item">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Kathmandu Metropolitan City, Bagmati Zone, Nepal</span>
+        </div>
+        <div class="cdc-topbar-item">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+9774015667">+977 4015667</a>
+        </div>
+      </div>
+      <div class="cdc-topbar-right">
+        <span class="cdc-badge-verified">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 9z"/></svg>
+          Vetted since 2012 (Org #13550)
+        </span>
+        <span class="cdc-badge-verified" style="background: rgba(255, 152, 0, 0.15); border-color: rgba(255, 152, 0, 0.4); color: #fdba74;">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.6 6.6L22 9.2l-5.3 4.6L18.2 21 12 17.3 5.8 21l1.5-7.2L2 9.2l7.4-.6L12 2z"/></svg>
+          Top Ranked on GlobalGiving
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="cdc-navbar">
+    <div class="cdc-navbar-inner cdc-container">
+      <a href="https://www.cdcnepal.org/" class="cdc-brand" onclick="if (window.location.pathname === '/' || window.location.href.replace(/#.*$/, '') === this.href) { window.location.reload(); return false; }">
+        <img 
+          src="https://cdcnepal.org/wp-content/uploads/2026/09/CDCNepal_Logo.png" 
+          alt="CDC Nepal Logo" 
+          class="cdc-brand-logo-img"
+          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';"
+        />
+        <div class="cdc-brand-logo-fallback" id="logoFallback">CDC</div>
+        <div class="cdc-brand-text">
+          <span class="en">CDC Nepal</span>
+          <span class="np">समुदाय विकास केन्द्र</span>
+        </div>
+      </a>
+
+      <button class="cdc-menu-toggle" onclick="toggleCdcMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="cdcNavMenu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <ul class="cdc-nav-menu" id="cdcNavMenu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#projects">Our causes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://cdcnepal.org/blogs/">Blog</a></li>
+        <li>
+          <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cdc-btn-donate">
+             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+             Donate via GlobalGiving
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="cdc-hero" id="home">
+    <div class="cdc-hero-content">
+      <div class="cdc-hero-badges">
+        <div class="cdc-hero-badge cdc-hero-badge-verified">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 9z"/></svg>
+          Vetted since 2012 (Org #13550)
+        </div>
+        <div class="cdc-hero-badge cdc-hero-badge-alt">
+          <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.6 6.6L22 9.2l-5.3 4.6L18.2 21 12 17.3 5.8 21l1.5-7.2L2 9.2l7.4-.6L12 2z"/></svg>
+          Top Ranked on GlobalGiving
+        </div>
+      </div>
+      <h1>Community Development Center Nepal</h1>
+      <h2>सामुदायिक विकास केन्द्र नेपाल</h2>
+      <p>
+        Helping helpless children access food, clothing, and education, while providing dignity, nourishment, and essential medical care to vulnerable elderly citizens in Kathmandu and across Nepal.
+      </p>
+      <div class="cdc-hero-actions">
+        <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cdc-btn-hero-primary">
+           <span>Support our mission today</span>
+           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#about" class="cdc-btn-hero-secondary">
+          Learn more about CDC Nepal
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Impact Stats -->
+  <div class="cdc-stats-wrapper">
+    <div class="cdc-stats-card">
+      <div class="cdc-stat-item">
+        <div class="cdc-stat-number">2011</div>
+        <div class="cdc-stat-label">Year founded</div>
+      </div>
+      <div class="cdc-stat-item">
+        <div class="cdc-stat-number">100+</div>
+        <div class="cdc-stat-label">Elders supported daily</div>
+      </div>
+      <div class="cdc-stat-item">
+        <div class="cdc-stat-number">500+</div>
+        <div class="cdc-stat-label">Helpless children educated</div>
+      </div>
+      <div class="cdc-stat-item">
+        <div class="cdc-stat-number">$62,957+</div>
+        <div class="cdc-stat-label">Raised on GlobalGiving</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="cdc-section" id="about">
+    <div class="cdc-about-grid">
+      <div class="cdc-about-content">
+        <h3>Dedicated to helping the helpless in Nepal</h3>
+        <span class="since">Serving Kathmandu since 2011</span>
+        <p>
+          Community Development Center – CDC Nepal exists to bring comfort, dignity, and hope to the most vulnerable members of Nepali society.
+        </p>
+        <p>
+          We support elderly people residing in care homes across the Kathmandu Valley who lack basic necessities like food, warm clothing, and proper healthcare, as well as helpless children who need access to formal education and loving guidance.
+        </p>
+      </div>
+
+      <div class="cdc-verification-box">
+        <h4>
+          <svg width="20" height="20" fill="none" stroke="var(--cdc-blue-primary)" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Safe & transparent funding
+        </h4>
+        <p>
+          To ensure 100% financial transparency and security for all international donors, CDC Nepal processes all public funding exclusively through <strong>GlobalGiving</strong> (Org ID: #13550). We've been vetted since 2012 and currently hold <strong>Top Ranked</strong> status, GlobalGiving's recognition for consistent engagement and program effectiveness.
+        </p>
+        <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cdc-link-arrow">
+           <span>Verify our GlobalGiving status</span>
+           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Active Causes Section -->
+  <section class="cdc-section cdc-causes-section" id="projects">
+    <div class="cdc-section-header">
+      <h2>Active causes you can fund</h2>
+      <p>Choose an ongoing initiative to support directly through our verified GlobalGiving campaign portal.</p>
+    </div>
+
+    <div class="cdc-projects-grid">
+      
+      <!-- Cause Card 1 -->
+      <div class="cdc-project-card">
+        <div>
+          <div class="cdc-card-img-wrap">
+            <img src="https://cdcnepal.org/wp-content/uploads/2026/09/Provide-food-for-100-elderly-people-in-Nepal.jpg" alt="Provide Food for 100 Elderly People" loading="lazy" />
+            <span class="cdc-card-badge">Food security & elder care</span>
+          </div>
+          <div class="cdc-card-body">
+            <h3>Provide food for 100 elderly people</h3>
+            <p>Delivering essential food rations (rice, lentils), warm winter clothing, blankets, and medical care to helpless elderly residents in Kathmandu care homes.</p>
+          </div>
+        </div>
+        <div class="cdc-card-footer">
+          <a href="https://www.globalgiving.org/projects/provide-food-for-100-elderly-people-in-nepal/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cdc-btn-card-donate">
+             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+             Give food & warmth ($10+)
+          </a>
+        </div>
+      </div>
+
+      <!-- Cause Card 2 -->
+      <div class="cdc-project-card">
+        <div>
+          <div class="cdc-card-img-wrap">
+            <img src="https://cdcnepal.org/wp-content/uploads/2026/09/Support-500-Nepali-Helpless-Kids-for-Education.jpg" alt="Support 500 Helpless Kids for Education" loading="lazy" />
+            <span class="cdc-card-badge">Education & child welfare</span>
+          </div>
+          <div class="cdc-card-body">
+            <h3>Support 500 helpless kids for education</h3>
+            <p>Covering school tuition, uniforms, textbooks, and hostel costs to empower orphaned and underprivileged children to build a brighter future.</p>
+          </div>
+        </div>
+        <div class="cdc-card-footer">
+          <a href="https://www.globalgiving.org/projects/support-500-helpless-nepali-kids-education/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cdc-btn-card-donate">
+             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+             Sponsor a child's education
+          </a>
+        </div>
+      </div>
+
+      <!-- Cause Card 3 -->
+      <div class="cdc-project-card">
+        <div>
+          <div class="cdc-card-img-wrap">
+            <img src="https://cdcnepal.org/wp-content/uploads/2026/09/Emergency-Relief-for-Nepal-Flood-Survivors.jpg" alt="Emergency Relief for Nepal Flood Survivors" loading="lazy" />
+            <span class="cdc-card-badge">Disaster relief</span>
+          </div>
+          <div class="cdc-card-body">
+            <h3>Emergency relief for flood survivors</h3>
+            <p>Providing emergency food kits, clean drinking water, temporary shelter supplies, and healthcare support for families affected by sudden floods in Nepal.</p>
+          </div>
+        </div>
+        <div class="cdc-card-footer">
+          <a href="https://www.globalgiving.org/microprojects/emergency-relief-for-nepal-flood-survivors/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cdc-btn-card-donate">
+             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+             Donate to disaster relief
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="cdc-section cdc-faq-section" id="faq">
+    <div class="cdc-section-header">
+      <h2>Frequently asked questions</h2>
+      <p>What people ask before donating or getting involved with CDC Nepal.</p>
+    </div>
+
+    <div class="cdc-faq-list">
+      <details class="cdc-faq-item" open>
+        <summary>
+          <span>Is CDC Nepal a verified non-profit organization?</span>
+          <span class="cdc-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="cdc-faq-answer">
+          Yes. CDC Nepal has been a vetted non-profit partner on GlobalGiving, a leading global crowdfunding platform for nonprofits, since 2012 (Org #13550), and currently holds GlobalGiving's Top Ranked status for consistent engagement and program effectiveness. All donations are processed securely through GlobalGiving.
+        </div>
+      </details>
+
+      <details class="cdc-faq-item">
+        <summary>
+          <span>How is my donation used?</span>
+          <span class="cdc-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="cdc-faq-answer">
+          Donations fund three ongoing programs: food, clothing, and medical care for elderly residents in Kathmandu care homes; tuition, uniforms, and textbooks for helpless and orphaned children; and emergency relief for families affected by flooding in Nepal.
+        </div>
+      </details>
+
+      <details class="cdc-faq-item">
+        <summary>
+          <span>How do I know my donation is secure?</span>
+          <span class="cdc-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="cdc-faq-answer">
+          All public funding is processed exclusively through GlobalGiving, an independent, vetted platform, rather than directly by CDC Nepal. This keeps every transaction transparent and auditable.
+        </div>
+      </details>
+
+      <details class="cdc-faq-item">
+        <summary>
+          <span>Can I sponsor a specific child or elderly resident?</span>
+          <span class="cdc-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="cdc-faq-answer">
+          Contributions go toward program-wide funds rather than individual sponsorships, so support reaches whichever children or elderly residents currently need it most. Reach out via the contact details below if you'd like to discuss a dedicated gift.
+        </div>
+      </details>
+
+      <details class="cdc-faq-item">
+        <summary>
+          <span>Where is CDC Nepal based?</span>
+          <span class="cdc-faq-icon" aria-hidden="true">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </span>
+        </summary>
+        <div class="cdc-faq-answer">
+          CDC Nepal is based in Kathmandu Metropolitan City, Bagmati Province, Nepal, and has been operating since 2011.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="cdc-section cdc-contact-section" id="contact">
+    <div class="cdc-contact-card">
+
+      <!-- Left: hero-style info panel -->
+      <div class="cdc-contact-info-panel">
+        <span class="since">Get in touch</span>
+        <h3>We'd love to hear from you</h3>
+        <p>
+          Whether you have a question about our programs, want to arrange a visit to Kathmandu, or are exploring a partnership, our team is here to help.
+        </p>
+        <ul class="cdc-contact-list">
+          <li>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>Kathmandu Metropolitan City, Bagmati Zone, Nepal</span>
+          </li>
+          <li>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+9774015667">+977 4015667</a>
+          </li>
+          <li>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:info@cdcnepal.org">info@cdcnepal.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right: Fluent Forms embed -->
+      <div class="cdc-contact-form-panel">
+        <h4>Send us a message</h4>
+        <p class="cdc-contact-form-sub">We usually reply within 1–2 business days.</p>
+        <div class="cdc-contact-form-embed">
+          <!--
+            Replace the placeholder below with your Fluent Forms shortcode,
+            e.g. [fluentform id="1"]
+            Note: this shortcode only renders if this HTML is placed inside
+            content WordPress processes as a shortcode (e.g. an Elementor
+            "Shortcode" widget or a page/post body), not a raw HTML/Code
+            widget — those output the shortcode text as-is instead of
+            running it.
+          -->
+          [fluentform id="1"]
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cdc-footer" id="site-footer">
+    <div class="cdc-footer-grid">
+      
+      <!-- Footer Column 1 -->
+      <div class="cdc-footer-col">
+        <h4>CDC Nepal</h4>
+        <p><strong>Community Development Center Nepal</strong></p>
+        <p style="font-family: 'Noto Sans Devanagari', sans-serif;">सामुदायिक विकास केन्द्र नेपाल</p>
+        <p style="margin-top: 8px;">A registered non-profit organization helping elderly citizens and vulnerable children across Nepal.</p>
+      </div>
+
+      <!-- Footer Column 2 -->
+      <div class="cdc-footer-col">
+        <h4>Headquarters</h4>
+        <ul>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>Kathmandu Metropolitan City, Bagmati Zone, Nepal</span>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+9774015667">+977 4015667</a>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:info@cdcnepal.org">info@cdcnepal.org</a>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <a href="https://cdcnepal.org" target="_blank" rel="noopener noreferrer">www.cdcnepal.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3 -->
+      <div class="cdc-footer-col">
+        <h4>Verified giving</h4>
+        <p>GlobalGiving Org ID: <strong>#13550</strong></p>
+        <p>Vetted partner since 2012</p>
+        <p>Top Ranked on GlobalGiving</p>
+        <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cdc-btn-footer-donate">
+           <span>Donate via GlobalGiving</span>
+           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="cdc-footer-bottom">
+      <p>© Community Development Center Nepal (CDC Nepal). All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Mobile Navigation Toggle Script -->
+<script>
+  function toggleCdcMenu() {
+    var menu = document.getElementById("cdcNavMenu");
+    var btn = document.querySelector(".cdc-menu-toggle");
+    if (menu) {
+      var isOpen = menu.classList.toggle("active");
+      if (btn) btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+  }
+</script>
+
+<!-- Scroll-Spy: keeps the nav underline in sync with the section in view -->
+<script>
+  (function () {
+    var navLinks = Array.prototype.slice.call(
+      document.querySelectorAll('.cdc-nav-menu a[href^="#"]')
+    );
+    if (!navLinks.length) return;
+
+    var sectionMap = {};
+    navLinks.forEach(function (link) {
+      var id = link.getAttribute("href").slice(1);
+      var section = document.getElementById(id);
+      if (section) sectionMap[id] = { link: link, section: section };
+    });
+
+    function setActive(id) {
+      navLinks.forEach(function (link) {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+      });
+    }
+
+    // Instant feedback on click, before the browser finishes scrolling.
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        var id = link.getAttribute("href").slice(1);
+        if (sectionMap[id]) setActive(id);
+      });
+    });
+
+    // Keep it accurate on scroll: whichever section crosses the middle
+    // band of the viewport becomes the active one.
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: 0 }
+    );
+
+    Object.keys(sectionMap).forEach(function (id) {
+      observer.observe(sectionMap[id].section);
+    });
+  })();
+</script>
+
+</body>
+</html>
