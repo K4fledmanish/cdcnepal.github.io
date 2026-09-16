@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | CDC Nepal</title>
+  <meta name="description" content="Read the latest news, updates, and stories from Community Development Center (CDC) Nepal — a verified non-profit supporting helpless children and vulnerable elderly citizens in Kathmandu.">
+  <link rel="canonical" href="https://cdcnepal.org/blogs/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog | CDC Nepal">
+  <meta property="og:description" content="News, updates, and stories from Community Development Center (CDC) Nepal.">
+  <meta property="og:url" content="https://cdcnepal.org/blogs/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "Community Development Center Nepal",
+    "alternateName": "CDC Nepal",
+    "url": "https://www.cdcnepal.org/",
+    "description": "Community Development Center (CDC) Nepal is a non-profit organization founded in 2011, dedicated to helping helpless children access food, clothing, and education, and providing dignity, nourishment, and medical care to vulnerable elderly citizens in Kathmandu and across Nepal.",
+    "foundingDate": "2011",
+    "telephone": "+977-4015667",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressRegion": "Bagmati Province", "addressCountry": "NP" },
+    "sameAs": ["https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/"]
+  }
+  </script>
+
+  <!-- Google Fonts: Montserrat & Noto Sans Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Root Reset for Elementor Canvas */
+    html, body {
+      background-color: #00123a !important;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      font-family: 'Montserrat', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1e293b;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    :root {
+      --cdc-blue-primary: #0038b8;
+      --cdc-blue-dark: #001f68;
+      --cdc-blue-deep: #00123a;
+      --cdc-orange: #ff9800;
+      --cdc-orange-hover: #e68900;
+      --cdc-emerald: #059669;
+      --cdc-slate-light: #f8fafc;
+      --cdc-gray-text: #475569;
+      --cdc-border: rgba(226, 232, 240, 0.8);
+    }
+
+    .cdc-site * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cdc-site {
+      width: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .cdc-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .cdc-site a:focus-visible,
+    .cdc-site button:focus-visible,
+    .cdc-site summary:focus-visible {
+      outline: 2px solid var(--cdc-orange);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .cdc-topbar {
+      background-color: var(--cdc-blue-dark);
+      color: #cbd5e1;
+      font-size: 0.78rem;
+      padding: 10px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cdc-topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cdc-topbar-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .cdc-topbar-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cdc-topbar-item svg {
+      color: var(--cdc-orange);
+      flex-shrink: 0;
+    }
+
+    .cdc-topbar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cdc-topbar a:hover {
+      color: var(--cdc-orange);
+    }
+
+    .cdc-badge-verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(5, 150, 105, 0.2);
+      border: 1px solid rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+      font-weight: 700;
+      font-size: 0.72rem;
+    }
+
+    .cdc-navbar {
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 12px 28px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid var(--cdc-border);
+    }
+
+    .cdc-navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cdc-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .cdc-brand-logo-img {
+      height: 42px;
+      max-height: 42px;
+      width: auto;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+    }
+
+    .cdc-brand:hover .cdc-brand-logo-img {
+      transform: scale(1.04);
+    }
+
+    .cdc-brand-logo-fallback {
+      height: 42px;
+      width: 42px;
+      background-color: var(--cdc-blue-primary);
+      color: #ffffff;
+      border-radius: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.85rem;
+      border: 2px solid #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 56, 184, 0.3);
+      flex-shrink: 0;
+    }
+
+    .cdc-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cdc-brand-text .en {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--cdc-blue-primary);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .cdc-brand-text .np {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    .cdc-nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate) {
+      text-decoration: none;
+      color: #334155;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+      position: relative;
+      padding-bottom: 3px;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate)::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 0;
+      height: 2px;
+      background: var(--cdc-orange);
+      transition: width 0.2s ease;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate):hover::after,
+    .cdc-nav-menu a.active:not(.cdc-btn-donate)::after {
+      width: 100%;
+    }
+
+    .cdc-nav-menu a:not(.cdc-btn-donate):hover,
+    .cdc-nav-menu a.active:not(.cdc-btn-donate) {
+      color: var(--cdc-blue-primary);
+    }
+
+    .cdc-btn-donate {
+      background-color: var(--cdc-orange);
+      color: #ffffff !important;
+      padding: 11px 24px !important;
+      border-radius: 30px;
+      font-weight: 800 !important;
+      font-size: 0.85rem !important;
+      line-height: 1 !important;
+      box-shadow: 0 4px 14px rgba(255, 152, 0, 0.35);
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      position: static !important;
+    }
+
+    .cdc-btn-donate svg {
+      flex-shrink: 0;
+    }
+
+    .cdc-btn-donate:hover {
+      background-color: var(--cdc-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 152, 0, 0.45);
+    }
+
+    .cdc-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #0f172a;
+      padding: 6px;
+    }
+
+    .cdc-page-header {
+      background: linear-gradient(135deg, var(--cdc-blue-primary) 0%, var(--cdc-blue-deep) 100%);
+      color: #ffffff;
+      padding: 70px 32px 64px 32px;
+      text-align: center;
+    }
+
+    .cdc-page-header h1 {
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      color: #ffffff !important;
+    }
+
+    .cdc-page-header p {
+      font-size: 1rem;
+      color: #cbd5e1 !important;
+      max-width: 620px;
+      margin: 0 auto 18px auto;
+      line-height: 1.6;
+    }
+
+    .cdc-breadcrumb {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .cdc-breadcrumb a {
+      color: #fde68a;
+      text-decoration: none;
+    }
+
+    .cdc-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .cdc-section {
+      padding: 64px 32px;
+    }
+
+    .cdc-blog-content-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .cdc-blog-grid {
+      display: grid;
+      grid-gap: 32px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 640px) {
+      .cdc-blog-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 1024px) {
+      .cdc-blog-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .cdc-blog-loading,
+    .cdc-blog-empty,
+    .cdc-blog-error {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--cdc-gray-text);
+      font-size: 0.95rem;
+      background: var(--cdc-slate-light);
+      border: 2px dashed var(--cdc-border);
+      border-radius: 16px;
+    }
+
+    .cdc-blog-card {
+      background: #ffffff;
+      border: 1px solid var(--cdc-border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      text-align: left;
+      cursor: pointer;
+      font-family: inherit;
+      padding: 0;
+      width: 100%;
+    }
+
+    .cdc-blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 56, 184, 0.12);
+    }
+
+    .cdc-blog-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: var(--cdc-slate-light);
+      display: block;
+    }
+
+    .cdc-blog-card-img.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cdc-blue-primary);
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+
+    .cdc-blog-card-body {
+      padding: 20px 22px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .cdc-blog-card-date {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--cdc-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+
+    .cdc-blog-card-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--cdc-blue-dark);
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+
+    .cdc-blog-card:hover .cdc-blog-card-title {
+      color: var(--cdc-orange);
+    }
+
+    .cdc-blog-card-excerpt {
+      font-size: 0.88rem;
+      color: var(--cdc-gray-text);
+      line-height: 1.6;
+      margin-bottom: 14px;
+      flex: 1;
+    }
+
+    .cdc-blog-card-readmore {
+      font-size: 0.82rem;
+      font-weight: 800;
+      color: var(--cdc-blue-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cdc-blog-card:hover .cdc-blog-card-readmore {
+      color: var(--cdc-orange-hover);
+    }
+
+    .cdc-blog-modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 18, 58, 0.72);
+      backdrop-filter: blur(3px);
+      z-index: 2000;
+      padding: 40px 20px;
+      overflow-y: auto;
+    }
+
+    .cdc-blog-modal-overlay.open {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .cdc-blog-modal {
+      background: #ffffff;
+      border-radius: 18px;
+      max-width: 760px;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      position: relative;
+      animation: cdc-modal-in 0.25s ease;
+    }
+
+    @keyframes cdc-modal-in {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cdc-blog-modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.95);
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #001f68;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 2;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .cdc-blog-modal-close:hover {
+      background: var(--cdc-orange);
+      color: #ffffff;
+      transform: scale(1.06);
+    }
+
+    .cdc-blog-modal-img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      background: var(--cdc-slate-light);
+    }
+
+    .cdc-blog-modal-body {
+      padding: 30px 34px 40px 34px;
+    }
+
+    .cdc-blog-modal-date {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--cdc-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+
+    .cdc-blog-modal-title {
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--cdc-blue-dark);
+      line-height: 1.3;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+
+    .cdc-blog-modal-content {
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.75;
+    }
+
+    .cdc-blog-modal-content p {
+      margin-bottom: 16px;
+    }
+
+    .cdc-blog-modal-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 12px 0;
+    }
+
+    .cdc-blog-modal-content a {
+      color: var(--cdc-blue-primary);
+      font-weight: 700;
+    }
+
+    .cdc-blog-modal-content h1,
+    .cdc-blog-modal-content h2,
+    .cdc-blog-modal-content h3 {
+      color: var(--cdc-blue-dark);
+      margin: 22px 0 12px 0;
+      font-weight: 800;
+    }
+
+    @media (max-width: 600px) {
+      .cdc-blog-modal-overlay { padding: 0; }
+      .cdc-blog-modal { border-radius: 0; min-height: 100vh; }
+      .cdc-blog-modal-img { height: 200px; }
+      .cdc-blog-modal-body { padding: 24px 20px 34px 20px; }
+      .cdc-blog-modal-title { font-size: 1.35rem; }
+    }
+
+    .cdc-footer {
+      background-color: var(--cdc-blue-deep);
+      color: #94a3b8;
+      padding: 55px 32px 24px 32px;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cdc-footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .cdc-footer-col h4 {
+      color: #ffffff;
+      font-size: 0.98rem;
+      font-weight: 800;
+      margin-bottom: 18px;
+      border-bottom: 2px solid var(--cdc-blue-primary);
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    .cdc-footer-col p {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+
+    .cdc-footer-col ul {
+      list-style: none;
+    }
+
+    .cdc-footer-col ul li {
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .cdc-footer-col ul li svg {
+      color: var(--cdc-orange);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .cdc-footer-col a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .cdc-footer-col a:hover {
+      color: #ffffff;
+    }
+
+    .cdc-footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 24px;
+      font-size: 0.78rem;
+      color: #64748b;
+    }
+
+    .cdc-footer-col .cdc-btn-footer-donate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      font-weight: 800;
+      font-size: 0.85rem;
+      line-height: 1;
+      padding: 11px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .cdc-footer-col .cdc-btn-footer-donate:hover {
+      background-color: var(--cdc-orange);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 152, 0, 0.35);
+    }
+
+    @media (max-width: 992px) {
+      .cdc-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cdc-topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+      .cdc-menu-toggle {
+        display: block;
+      }
+      .cdc-nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #ffffff;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        border-bottom: 1px solid var(--cdc-border);
+      }
+      .cdc-nav-menu.active {
+        display: flex;
+      }
+      .cdc-nav-menu .cdc-btn-donate {
+        width: 100%;
+        justify-content: center;
+      }
+      .cdc-page-header {
+        padding: 50px 24px 46px 24px;
+      }
+      .cdc-page-header h1 {
+        font-size: 1.9rem;
+      }
+      .cdc-footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .cdc-page-header {
+        padding: 44px 18px 40px 18px;
+      }
+      .cdc-page-header h1 {
+        font-size: 1.6rem;
+      }
+      .cdc-topbar-item span {
+        font-size: 0.72rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cdc-site">
+
+  <!-- Top Contact & Status Bar -->
+  <div class="cdc-topbar">
+    <div class="cdc-topbar-inner cdc-container">
+      <div class="cdc-topbar-left">
+        <div class="cdc-topbar-item">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <span>Kathmandu Metropolitan City, Bagmati Zone, Nepal</span>
+        </div>
+        <div class="cdc-topbar-item">
+          <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+9774015667">+977 4015667</a>
+        </div>
+      </div>
+      <div class="cdc-topbar-right">
+        <span class="cdc-badge-verified">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 9z"/></svg>
+          Vetted since 2012 (Org #13550)
+        </span>
+        <span class="cdc-badge-verified" style="background: rgba(255, 152, 0, 0.15); border-color: rgba(255, 152, 0, 0.4); color: #fdba74;">
+          <svg width="12" height="12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.6 6.6L22 9.2l-5.3 4.6L18.2 21 12 17.3 5.8 21l1.5-7.2L2 9.2l7.4-.6L12 2z"/></svg>
+          Top Ranked on GlobalGiving
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="cdc-navbar">
+    <div class="cdc-navbar-inner cdc-container">
+      <a href="https://www.cdcnepal.org/" class="cdc-brand">
+        <img 
+          src="https://cdcnepal.org/wp-content/uploads/2026/09/CDCNepal_Logo.png" 
+          alt="CDC Nepal Logo" 
+          class="cdc-brand-logo-img"
+          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';"
+        />
+        <div class="cdc-brand-logo-fallback" id="logoFallback">CDC</div>
+        <div class="cdc-brand-text">
+          <span class="en">CDC Nepal</span>
+          <span class="np">समुदाय विकास केन्द्र</span>
+        </div>
+      </a>
+
+      <button class="cdc-menu-toggle" onclick="toggleCdcMenu()" aria-label="Toggle navigation" aria-expanded="false" aria-controls="cdcNavMenu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <ul class="cdc-nav-menu" id="cdcNavMenu">
+        <li><a href="https://www.cdcnepal.org/">Home</a></li>
+        <li><a href="https://www.cdcnepal.org/#about">About us</a></li>
+        <li><a href="https://www.cdcnepal.org/#projects">Our causes</a></li>
+        <li><a href="https://www.cdcnepal.org/#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://cdcnepal.org/blogs/" class="active">Blog</a></li>
+        <li>
+          <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="cdc-btn-donate">
+             <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+             Donate via GlobalGiving
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="cdc-page-header">
+    <h1>Our Blog</h1>
+    <p>News, updates, and stories from the ground in Kathmandu — how your support reaches helpless children and vulnerable elderly citizens across Nepal.</p>
+    <div class="cdc-breadcrumb">
+      <a href="https://www.cdcnepal.org/">Home</a> &nbsp;/&nbsp; Blog
+    </div>
+  </section>
+
+  <!-- Blog Listing Section -->
+  <section class="cdc-section" id="blog-list">
+    <div class="cdc-blog-content-wrap">
+
+      <!-- Posts are pulled live from WordPress's built-in REST API
+           (no plugin required) and rendered by the script below. -->
+      <div class="cdc-blog-grid" id="cdcBlogGrid">
+        <div class="cdc-blog-loading">Loading posts…</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="cdc-footer" id="contact">
+    <div class="cdc-footer-grid">
+
+      <!-- Footer Column 1 -->
+      <div class="cdc-footer-col">
+        <h4>CDC Nepal</h4>
+        <p><strong>Community Development Center Nepal</strong></p>
+        <p style="font-family: 'Noto Sans Devanagari', sans-serif;">सामुदायिक विकास केन्द्र नेपाल</p>
+        <p style="margin-top: 8px;">A registered non-profit organization helping elderly citizens and vulnerable children across Nepal.</p>
+      </div>
+
+      <!-- Footer Column 2 -->
+      <div class="cdc-footer-col">
+        <h4>Headquarters</h4>
+        <ul>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <span>Kathmandu Metropolitan City, Bagmati Zone, Nepal</span>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:+9774015667">+977 4015667</a>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:info@cdcnepal.org">info@cdcnepal.org</a>
+          </li>
+          <li>
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <a href="https://cdcnepal.org" target="_blank" rel="noopener noreferrer">www.cdcnepal.org</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3 -->
+      <div class="cdc-footer-col">
+        <h4>Verified giving</h4>
+        <p>GlobalGiving Org ID: <strong>#13550</strong></p>
+        <p>Vetted partner since 2012</p>
+        <p>Top Ranked on GlobalGiving</p>
+        <a href="https://www.globalgiving.org/donate/13550/community-development-center-kathmandu-nepal/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cdc-btn-footer-donate">
+           <span>Donate via GlobalGiving</span>
+           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="cdc-footer-bottom">
+      <p>© Community Development Center Nepal (CDC Nepal). All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+
+<!-- Blog Post Modal -->
+<div class="cdc-blog-modal-overlay" id="cdcBlogModalOverlay">
+  <div class="cdc-blog-modal" id="cdcBlogModal" role="dialog" aria-modal="true" aria-labelledby="cdcBlogModalTitle">
+    <button class="cdc-blog-modal-close" id="cdcBlogModalClose" aria-label="Close">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="cdcBlogModalInner"></div>
+  </div>
+</div>
+
+<!-- Mobile Navigation Toggle Script -->
+<script>
+  function toggleCdcMenu() {
+    var menu = document.getElementById("cdcNavMenu");
+    var btn = document.querySelector(".cdc-menu-toggle");
+    if (menu) {
+      var isOpen = menu.classList.toggle("active");
+      if (btn) btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    }
+  }
+</script>
+
+<!-- Blog Grid: fetches posts from WordPress's core REST API (no plugin) -->
+<script>
+  (function () {
+    var WP_API_BASE = "https://cdcnepal.org/wp-json/wp/v2";
+    var POSTS_PER_PAGE = 6;
+    var grid = document.getElementById("cdcBlogGrid");
+    var overlay = document.getElementById("cdcBlogModalOverlay");
+    var modalInner = document.getElementById("cdcBlogModalInner");
+    var closeBtn = document.getElementById("cdcBlogModalClose");
+
+    var postsById = {};
+
+    function stripHtml(html) {
+      var tmp = document.createElement("div");
+      tmp.innerHTML = html;
+      return (tmp.textContent || tmp.innerText || "").trim();
+    }
+
+    function truncate(text, maxLen) {
+      if (text.length <= maxLen) return text;
+      return text.slice(0, maxLen).replace(/\s+\S*$/, "") + "…";
+    }
+
+    function formatDate(iso) {
+      var d = new Date(iso);
+      return d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+    }
+
+    function getFeaturedImage(post) {
+      var media = post._embedded &&
+        post._embedded["wp:featuredmedia"] &&
+        post._embedded["wp:featuredmedia"][0];
+      return media && media.source_url;
+    }
+
+    function openModal(postId) {
+      var post = postsById[postId];
+      if (!post) return;
+
+      var title = stripHtml(post.title ? post.title.rendered : "");
+      var date = formatDate(post.date);
+      var imgUrl = getFeaturedImage(post);
+      var content = post.content ? post.content.rendered : "";
+
+      modalInner.innerHTML =
+        (imgUrl ? '<img class="cdc-blog-modal-img" src="' + imgUrl + '" alt="' + title.replace(/"/g, "&quot;") + '">' : '') +
+        '<div class="cdc-blog-modal-body">' +
+          '<div class="cdc-blog-modal-date">' + date + '</div>' +
+          '<h2 class="cdc-blog-modal-title" id="cdcBlogModalTitle">' + title + '</h2>' +
+          '<div class="cdc-blog-modal-content">' + content + '</div>' +
+        '</div>';
+
+      overlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+      closeBtn.focus();
+    }
+
+    function closeModal() {
+      overlay.classList.remove("open");
+      document.body.style.overflow = "";
+      modalInner.innerHTML = "";
+    }
+
+    closeBtn.addEventListener("click", closeModal);
+    overlay.addEventListener("click", function (e) {
+      if (e.target === overlay) closeModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && overlay.classList.contains("open")) closeModal();
+    });
+
+    function renderPosts(posts) {
+      if (!posts.length) {
+        grid.innerHTML = '<div class="cdc-blog-empty">No blog posts published yet. Check back soon!</div>';
+        return;
+      }
+
+      grid.innerHTML = "";
+      posts.forEach(function (post) {
+        postsById[post.id] = post;
+
+        var title = stripHtml(post.title ? post.title.rendered : "");
+        var excerpt = truncate(stripHtml(post.excerpt ? post.excerpt.rendered : ""), 140);
+        var date = formatDate(post.date);
+        var imgUrl = getFeaturedImage(post);
+
+        var card = document.createElement("button");
+        card.type = "button";
+        card.className = "cdc-blog-card";
+        card.setAttribute("aria-label", "Read: " + title);
+        card.addEventListener("click", function () { openModal(post.id); });
+
+        var imgHtml = imgUrl
+          ? '<img class="cdc-blog-card-img" src="' + imgUrl + '" alt="' + title.replace(/"/g, "&quot;") + '" loading="lazy">'
+          : '<div class="cdc-blog-card-img placeholder">CDC Nepal</div>';
+
+        card.innerHTML =
+          imgHtml +
+          '<div class="cdc-blog-card-body">' +
+            '<div class="cdc-blog-card-date">' + date + '</div>' +
+            '<div class="cdc-blog-card-title">' + title + '</div>' +
+            '<div class="cdc-blog-card-excerpt">' + excerpt + '</div>' +
+            '<span class="cdc-blog-card-readmore">Read more &rarr;</span>' +
+          '</div>';
+
+        grid.appendChild(card);
+      });
+    }
+
+    fetch(WP_API_BASE + "/posts?per_page=" + POSTS_PER_PAGE + "&_embed")
+      .then(function (res) {
+        if (!res.ok) throw new Error("WP API responded with " + res.status);
+        return res.json();
+      })
+      .then(renderPosts)
+      .catch(function (err) {
+        console.error("Failed to load blog posts:", err);
+        grid.innerHTML = '<div class="cdc-blog-error">Couldn\'t load posts right now. Please refresh, or check back shortly.</div>';
+      });
+  })();
+</script>
+
+</body>
+</html>
